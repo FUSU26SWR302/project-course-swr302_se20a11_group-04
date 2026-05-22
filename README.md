@@ -76,15 +76,20 @@ Sau khi ứng dụng khởi chạy thành công, có thể truy cập tài liệ
  http://localhost:8080/swagger-ui.html
 
 5. Cấu trúc thư mục chính (Main Folder Structure)
-6. 
-7. src/main/java/com/maintenance/
+ 
+6. src/main/java/com/maintenance/
 ├── config/           # Cấu hình Security (RBAC), Swagger, Scheduler
+
 ├── controller/       # Các API Endpoints (TicketController, DeviceController...)
+
 ├── dto/              # Các đối tượng truyền dữ liệu (Data Transfer Objects)
+
 ├── model/            # Thực thể Database (User, Equipment, MaintenanceTicket...)
+
 ├── repository/       # Giao tiếp với Database (Spring Data JPA)
+
 └── service/          # Chứa logic nghiệp vụ (Thuật toán phân công, tính toán lịch bảo trì)
-6. Thành viên nhóm (Contributors)
+7. Thành viên nhóm (Contributors)
 
 [Thương ] - [DE190096] - Nhiệm vụ: Xử lý CSDL, API Đăng nhập / Backend
 
