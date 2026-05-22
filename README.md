@@ -76,7 +76,8 @@ Sau khi ứng dụng khởi chạy thành công, có thể truy cập tài liệ
  http://localhost:8080/swagger-ui.html
 
 5. Cấu trúc thư mục chính (Main Folder Structure)
-6. src/main/java/com/maintenance/
+6. 
+7. src/main/java/com/maintenance/
 ├── config/           # Cấu hình Security (RBAC), Swagger, Scheduler
 ├── controller/       # Các API Endpoints (TicketController, DeviceController...)
 ├── dto/              # Các đối tượng truyền dữ liệu (Data Transfer Objects)
