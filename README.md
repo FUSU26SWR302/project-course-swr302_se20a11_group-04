@@ -91,15 +91,15 @@ Sau khi ứng dụng khởi chạy thành công, có thể truy cập tài liệ
 └── service/          # Chứa logic nghiệp vụ (Thuật toán phân công, tính toán lịch bảo trì)
 7. Thành viên nhóm (Contributors)
 
-[Thương ] - [DE190096] - Nhiệm vụ: Xử lý CSDL, API Đăng nhập / Backend
+[Nguyễn Đức Thương ] - [DE190096] - Nhiệm vụ: Xử lý CSDL, API Đăng nhập / Backend
 
-[Vinh] - [DE190156] - Nhiệm vụ: Thuật toán Real-time Bidding (WebSocket) / Backend
+[Phạm Châu Vinh] - [DE190156] - Nhiệm vụ: Thuật toán Real-time Bidding (WebSocket) / Backend
 
-[Quyết] - [DE190425] - Nhiệm vụ: Thiết kế giao diện / Frontend
+[Phạm Văn Quyết ] - [DE190425] - Nhiệm vụ: Thiết kế giao diện / Frontend
 
-[Phan ] - [DE190404] - Nhiệm vụ: Tích hợp thanh toán / API Sản phẩm
+[Phan Nguyễn ] - [DE191019] - Nhiệm vụ: Tích hợp thanh toán / API Sản phẩm
 
-[Huy ] - [DE191098] - Nhiệm vụ: Viết tài liệu SRS, Tester & Quản lý dự án
+[Trương Quang Huy ] - [DE190381] - Nhiệm vụ: Viết tài liệu SRS, Tester & Quản lý dự án
 Thiết lập Cơ sở dữ liệu (Database Setup):
 
 Tạo một database trong MySQL với tên maintenance_db.
