@@ -1,6 +1,6 @@
 Office Maintenance Management System (Hệ thống Quản lý Bảo trì Văn phòng)
 
-🔗 Jira Task Board: [Chèn_Link_Jira_Của_Nhóm_Vào_Đây]
+🔗 Jira Task Board: https://thuong1703n.atlassian.net/jira/software/projects/OMMS/boards/34
 
 1. Project Overview
 This project is a comprehensive facility management platform that allows staff to report issues, helps managers assign tasks to technicians, tracks repair progress, and schedules preventive maintenance for office equipment.
