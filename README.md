@@ -44,47 +44,81 @@ Automated Notification System
 Build an automatic notification system (Email or In-App Notification) to notify users when:
 
 Orders are successfully placed
+
 Reservations are confirmed
+
 Orders are completed
+
 Payments are confirmed
+
 4. Technologies
+   
 Backend
+
 Java 21
+
 Spring Boot
+
 Spring Security + JWT
+
 Spring Data JPA / Hibernate
+
 Maven
+
 Frontend
+
 ReactJS
+
 Bootstrap 5
+
 Axios
+
 Database
+
 MySQL
+
 AI Integration
+
 OpenAI API / Gemini API
+
 Other Tools & Technologies
+
 Swagger UI
+
 Cloudinary (Image Upload)
+
 GitHub
+
 Postman
+
 Figma
-5. Installation & Setup Guide
+
+6. Installation & Setup Guide
+
 Prerequisites
 
 Before running the project, make sure the following software is installed:
 
 Java 21
+
 Node.js
+
 MySQL 8+
+
 Maven 3.9+
+
 Git
 
 Optional:
 
 Cloudinary Account (for image upload feature)
+
 6. Setup Steps
+
 Step 1: Clone Repository
+
 git clone https://github.com/your-repo/restaurant-management-system.git
+
 Step 2: Database Setup
 
 Create a MySQL database:
@@ -108,6 +142,7 @@ spring.mail.host=smtp.gmail.com
 spring.mail.port=587
 spring.mail.username=your_email@gmail.com
 spring.mail.password=your_app_password
+
 Step 4: Run Backend Application
 
 Open terminal in backend project folder:
@@ -118,6 +153,7 @@ mvn spring-boot:run
 Backend server will run at:
 
 http://localhost:8080
+
 Step 5: Run Frontend Application
 
 Open terminal in frontend project folder:
