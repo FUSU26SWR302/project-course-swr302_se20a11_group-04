@@ -1,6 +1,8 @@
 Restaurant Management System (RMS)
+
 🔗 Jira Task Board
 https://thuong1703n.atlassian.net/jira/software/projects/RMS/boards/34
+
 1. Project Overview
 
 This project is a comprehensive restaurant management platform that allows customers to order food online, reserve tables, make online payments, and review restaurant services. The system helps restaurant staff manage tables, process customer orders, generate invoices, and support customers in real time. Kitchen staff can monitor cooking orders and update food preparation status. Administrators can manage menus, employees, coupons, revenue statistics, and customer feedback.
@@ -126,6 +128,7 @@ npm run dev
 Frontend application will run at:
 
 http://localhost:5173
+
 7. API Documentation
 
 After successfully running the application, API documentation can be accessed via Swagger UI:
@@ -144,52 +147,98 @@ Customer APIs
 src/main/java/com/restaurant/
 
 ├── config/          # Security, JWT, Swagger Configuration
+
 ├── controller/      # REST API Controllers
+
 ├── dto/             # Data Transfer Objects
+
 ├── model/           # Database Entities
+
 ├── repository/      # JPA Repository Layer
+
 ├── service/         # Business Logic Layer
+
 ├── util/            # Utility Classes
+
 └── exception/       # Exception Handling
+
 9. Main Functionalities
+    
 Customer Functions
+
 View Menu
+
 Search Food
+
 Filter Food By Category
+
 View Food Detail
+
 Add Food To Cart
+
 Place Order
+
 Reserve Table
+
 Make Online Payment
+
 Review Food
+
 Chat With AI Chatbot
+
 Staff Functions
+
 Manage Tables
+
 Create Orders
+
 Update Order Status
+
 Confirm Payments
+
 Print Invoices
+
 Handle Customer Requests
+
 Kitchen Staff Functions
+
 View Cooking Orders
+
 Update Food Status
+
 Accept Cooking Orders
+
 Predict Cooking Time
+
 Admin Functions
+
 Manage Employees
+
 Manage Food Menu
+
 Manage Coupons
+
 View Revenue Statistics
+
 View Dashboard Reports
+
 View Customer Feedback
-10. Contributors
+
+11. Contributors
+12. 
 Member	Student ID	Responsibilities
+
 Nguyễn Đức Thương	DE190096	Backend Development, Database Design, Authentication APIs
+
 Phạm Châu Vinh	DE190156	Order Processing APIs, Backend Development
+
 Phạm Văn Quyết	DE190425	Frontend Development, UI/UX Design
+
 Phan Nguyễn	DE191019	Payment Integration, Customer APIs
+
 Trương Quang Huy	DE190381	SRS Documentation, Testing, Project Management
-11. Database Setup
+
+14. Database Setup
 
 Create MySQL Database:
 
