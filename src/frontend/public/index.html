@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Cái Gì Cũng Không Có — Fine Dining tại TP.HCM" />
+    <meta name="theme-color" content="#0d0d1a" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍜</text></svg>" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <title>Cái Gì Cũng Không Có — Fine Dining</title>
+    <style>
+      *{margin:0;padding:0;box-sizing:border-box}
+      body{font-family:'Inter',sans-serif;background:#0d0d1a;overflow:hidden}
+      #loading{position:fixed;inset:0;background:#0d0d1a;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:9999;transition:opacity .6s,visibility .6s}
+      #loading.hide{opacity:0;visibility:hidden;pointer-events:none}
+      .ld-rings::before,.ld-rings::after{content:'';position:absolute;border:1px solid rgba(232,93,4,.08);border-radius:50%;animation:ring 3s ease-out infinite}
+      .ld-rings::before{width:600px;height:600px;top:50%;left:50%;transform:translate(-50%,-50%)}
+      .ld-rings::after{width:800px;height:800px;top:50%;left:50%;transform:translate(-50%,-50%);animation-delay:.5s}
+      @keyframes ring{0%{opacity:.4;transform:translate(-50%,-50%) scale(.8)}100%{opacity:0;transform:translate(-50%,-50%) scale(1.2)}}
+      .ld-logo{text-align:center;margin-bottom:44px;animation:fadeUp .8s ease forwards}
+      .ld-emoji{font-size:52px;display:block;margin-bottom:14px;filter:drop-shadow(0 0 18px rgba(232,93,4,.5));animation:glow 2s ease-in-out infinite}
+      @keyframes glow{0%,100%{filter:drop-shadow(0 0 18px rgba(232,93,4,.4))}50%{filter:drop-shadow(0 0 36px rgba(232,93,4,.8))}}
+      .ld-name{font-family:'Cormorant Garamond',serif;font-size:34px;font-weight:600;color:#f5f0e8;letter-spacing:4px;text-transform:uppercase;margin-bottom:6px}
+      .ld-tag{font-size:11px;color:rgba(232,93,4,.7);letter-spacing:6px;text-transform:uppercase}
+      .ld-orn{display:flex;align-items:center;gap:12px;margin-bottom:36px;animation:fadeUp .8s ease .2s forwards;opacity:0}
+      .ld-line{width:60px;height:1px;background:linear-gradient(90deg,transparent,rgba(232,93,4,.5))}
+      .ld-line:last-child{background:linear-gradient(90deg,rgba(232,93,4,.5),transparent)}
+      .ld-diamond{width:6px;height:6px;background:#e85d04;transform:rotate(45deg)}
+      .ld-bar{width:200px;animation:fadeUp .8s ease .4s forwards;opacity:0}
+      .ld-track{height:1px;background:rgba(255,255,255,.1);border-radius:1px;overflow:hidden;margin-bottom:10px}
+      .ld-fill{height:100%;background:linear-gradient(90deg,#e85d04,#ff8c42);animation:fill 1.8s ease forwards}
+      @keyframes fill{0%{width:0}60%{width:70%}100%{width:100%}}
+      .ld-txt{text-align:center;font-size:11px;color:rgba(255,255,255,.3);letter-spacing:3px;text-transform:uppercase;animation:blink 1.5s ease-in-out infinite}
+      @keyframes blink{0%,100%{opacity:.3}50%{opacity:.8}}
+      @keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+      .corner{position:absolute;width:44px;height:44px;border-color:rgba(232,93,4,.25);border-style:solid}
+      .c-tl{top:28px;left:28px;border-width:1px 0 0 1px}
+      .c-tr{top:28px;right:28px;border-width:1px 1px 0 0}
+      .c-bl{bottom:28px;left:28px;border-width:0 0 1px 1px}
+      .c-br{bottom:28px;right:28px;border-width:0 1px 1px 0}
+    </style>
+  </head>
+  <body>
+    <!-- React mount point -->
+    <div id="root"></div>
+
+    <!-- Loading screen -->
+    <div id="loading">
+      <div class="ld-rings"></div>
+      <div class="corner c-tl"></div>
+      <div class="corner c-tr"></div>
+      <div class="corner c-bl"></div>
+      <div class="corner c-br"></div>
+      <div class="ld-logo">
+        <span class="ld-emoji">🍜</span>
+        <div class="ld-name">Cái Gì Cũng Không Có</div>
+        <div class="ld-tag">Fine Dining · Est. 2026</div>
+      </div>
+      <div class="ld-orn">
+        <div class="ld-line"></div>
+        <div class="ld-diamond"></div>
+        <div class="ld-line"></div>
+      </div>
+      <div class="ld-bar">
+        <div class="ld-track"><div class="ld-fill"></div></div>
+        <div class="ld-txt">Đang tải</div>
+      </div>
+    </div>
+
+    <script>
+      // Ẩn loading sau khi React mount
+      new MutationObserver(function(m, obs) {
+        if (document.getElementById('root').children.length > 0) {
+          setTimeout(function() {
+            document.getElementById('loading').classList.add('hide');
+          }, 600);
+          obs.disconnect();
+        }
+      }).observe(document.getElementById('root'), {childList: true});
+    </script>
+  </body>
+</html>

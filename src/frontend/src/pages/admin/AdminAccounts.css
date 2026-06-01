@@ -1,0 +1,77 @@
+/* AdminAccounts — chỉ CSS đặc thù, phần chung đã có trong global.css */
+
+.admin-accounts { position: relative; }
+
+/* Stats cards */
+.ac-stats { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 20px; }
+.ac-stat-card {
+  background: white; border-radius: 10px; padding: 14px 18px;
+  text-align: center; box-shadow: var(--shadow-sm);
+  cursor: pointer; transition: all 0.2s; min-width: 100px;
+}
+.ac-stat-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+.active-card { border-top: 3px solid var(--success); }
+.banned-card { border-top: 3px solid var(--danger); }
+.role-card   { border-top: 3px solid var(--primary); }
+.ac-stat-num   { display: block; font-size: 24px; font-weight: 800; color: var(--sidebar-bg); }
+.ac-stat-label { display: block; font-size: 12px; color: var(--gray-600); margin-top: 2px; }
+
+/* Toolbar */
+.accounts-toolbar { display: flex; flex-direction: column; gap: 10px; margin-bottom: 16px; }
+.filter-row { display: flex; gap: 12px; flex-wrap: wrap; }
+
+/* Table */
+.accounts-table { padding: 0; overflow: hidden; }
+.row-banned td  { opacity: 0.65; background: #fff5f5; }
+
+/* User cell */
+.user-cell { display: flex; align-items: center; gap: 10px; }
+.user-avatar-sm {
+  width: 34px; height: 34px; border-radius: 50%;
+  background: var(--primary); color: white;
+  font-weight: 700; font-size: 14px;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.self-badge {
+  display: inline-block; margin-left: 6px;
+  background: #e6f4ff; color: var(--info);
+  font-size: 10px; font-weight: 700; padding: 1px 6px; border-radius: 10px;
+}
+.username-code { background: var(--gray-100); padding: 2px 8px; border-radius: 4px; font-size: 13px; color: var(--gray-800); }
+.role-select   { padding: 5px 10px; border-radius: 20px; font-size: 12px; font-weight: 600; border: none; cursor: pointer; outline: none; }
+.phone-text    { font-size: 13px; color: var(--gray-800); }
+
+/* Status pill */
+.status-pill { padding: 4px 10px; border-radius: 20px; font-size: 12px; font-weight: 600; white-space: nowrap; }
+.pill-active { background: #c6f6d5; color: #276749; }
+.pill-banned { background: #fed7d7; color: #9b2c2c; }
+
+/* Action buttons */
+.action-btns { display: flex; gap: 4px; align-items: center; }
+.ac-btn {
+  width: 30px; height: 30px; border-radius: 6px; font-size: 14px;
+  background: var(--gray-100); display: flex; align-items: center; justify-content: center;
+  transition: background 0.2s; flex-shrink: 0;
+}
+.ac-btn:disabled { opacity: 0.3; cursor: not-allowed; }
+.ac-btn:not(:disabled):hover { background: var(--gray-200); }
+.ban-btn:not(:disabled):hover   { background: #fed7d7; }
+.unban-btn:not(:disabled):hover { background: #c6f6d5; }
+.del-btn:not(:disabled):hover   { background: #fed7d7; }
+.reset-btn:not(:disabled):hover { background: #fefcbf; }
+.save-btn { background: #c6f6d5; }
+
+/* Confirm modal */
+.confirm-modal { width: 340px; text-align: center; padding: 28px; }
+.confirm-icon  { font-size: 40px; margin-bottom: 12px; }
+.confirm-text  { font-size: 16px; font-weight: 700; margin-bottom: 6px; }
+.confirm-sub   { font-size: 13px; color: var(--gray-600); margin-bottom: 20px; }
+.confirm-btns  { display: flex; gap: 10px; justify-content: center; }
+.confirm-ok    { padding: 10px 24px; background: var(--primary); color: white; border-radius: 8px; font-size: 14px; font-weight: 700; }
+.confirm-ok.danger { background: var(--danger); }
+.confirm-cancel { padding: 10px 20px; background: var(--gray-100); color: var(--gray-600); border-radius: 8px; font-size: 14px; }
+
+/* Add modal */
+.add-modal { width: 480px; }
+.add-modal h2 { font-size: 18px; font-weight: 700; margin-bottom: 20px; }
+.form-row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }

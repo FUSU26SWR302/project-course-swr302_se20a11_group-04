@@ -1,0 +1,53 @@
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.stat-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.stat-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.stat-label { font-size: 13px; color: var(--gray-600); margin-bottom: 4px; }
+.stat-value { font-size: 20px; font-weight: 700; color: var(--gray-800); }
+.stat-sub { font-size: 12px; color: var(--success); margin-top: 2px; }
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.orders-table th {
+  text-align: left;
+  padding: 10px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--gray-600);
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.orders-table td {
+  padding: 12px;
+  font-size: 14px;
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.orders-table tr:last-child td { border-bottom: none; }
+
+.order-id { font-weight: 600; color: var(--primary); }
+.order-total { font-weight: 600; }
