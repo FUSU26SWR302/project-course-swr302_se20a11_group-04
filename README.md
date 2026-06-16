@@ -2,7 +2,8 @@ Restaurant Management System (RMS)
 
 🔗 Jira Task Board
 https://thuong1703n.atlassian.net/jira/software/projects/RMS/boards/34
-
+🔗 Overleaf Link
+https://www.overleaf.com/read/bwghbbtfrkbk#e1ed4b
 1. Project Overview
 
 This project is a comprehensive restaurant management platform that allows customers to order food online, reserve tables, make online payments, and review restaurant services. The system helps restaurant staff manage tables, process customer orders, generate invoices, and support customers in real time. Kitchen staff can monitor cooking orders and update food preparation status. Administrators can manage menus, employees, coupons, revenue statistics, and customer feedback.
